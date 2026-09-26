@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Rihab Hamdani | Software Engineering Student</title>
+    <meta
+      name="description"
+      content="Rihab Hamdani is a third-year Software Engineering (GLSI) student at ISI Mahdia, Tunisia, building full-stack and AI-powered applications with Angular, React, Spring Boot, FastAPI and PostgreSQL."
+    />
+    <meta name="author" content="Rihab Hamdani" />
+    <meta name="theme-color" content="#0B1020" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#F8FAFC" media="(prefers-color-scheme: light)" />
+    <link rel="canonical" href="%SITE_URL%/" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Rihab Hamdani" />
+    <meta property="og:title" content="Rihab Hamdani | Software Engineering Student" />
+    <meta
+      property="og:description"
+      content="Software Engineering student building full-stack and AI-powered applications — frontend, backend, APIs, databases and AI."
+    />
+    <meta property="og:url" content="%SITE_URL%/" />
+    <meta property="og:image" content="%SITE_URL%/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Rihab Hamdani | Software Engineering Student" />
+    <meta
+      name="twitter:description"
+      content="Software Engineering student building full-stack and AI-powered applications."
+    />
+    <meta name="twitter:image" content="%SITE_URL%/og-image.png" />
+
+    <!-- Apply the saved / system theme before first paint to avoid a flash -->
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('theme');
+          var dark = saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+          document.documentElement.classList.toggle('dark', dark);
+        } catch (e) {
+          document.documentElement.classList.add('dark');
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <noscript>
+      <p style="padding:2rem;font-family:system-ui">
+        Rihab Hamdani — Software Engineering Student. Please enable JavaScript to view this portfolio.
+      </p>
+    </noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

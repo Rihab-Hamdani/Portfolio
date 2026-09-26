@@ -1,0 +1,15 @@
+app:
+  jwt:
+    secret: test-secret-that-is-long-enough-for-hs256-signing-0123456789
+    expiration-minutes: 60
+    issuer: rihab-portfolio-test
+  cors:
+    allowed-origins: http://localhost:5173
+  admin:
+    email: admin@test.local
+    password: test-admin-password-123
+    display-name: Test Admin
+  rate-limit:
+    contact-per-hour: 100
+    login-per-window: 100
+    analytics-per-minute: 100
