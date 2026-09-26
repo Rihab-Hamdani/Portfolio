@@ -1,0 +1,7 @@
+{
+  "rewrites": [
+    { "source": "/api/:path*", "destination": "https://portfolio-1-dabu.onrender.com/api/:path*" },
+    { "source": "/sitemap.xml", "destination": "https://portfolio-1-dabu.onrender.com/sitemap.xml" },
+    { "source": "/((?!api/|assets/|images/|projects/|.*\\..*).*)", "destination": "/index.html" }
+  ]
+}
