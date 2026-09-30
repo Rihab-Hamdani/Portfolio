@@ -6,6 +6,7 @@ import { ArchitectureFlow } from '@/components/ArchitectureFlow';
 import { GithubIcon } from '@/components/icons/BrandIcons';
 import { ProjectStatusBadge } from '@/components/ProjectCard';
 import { Reveal } from '@/components/Reveal';
+import { WakingUpNotice } from '@/components/WakingUpNotice';
 import { ScreenshotGallery } from '@/components/ScreenshotGallery';
 import { TechChip } from '@/components/ui/Badge';
 import { buttonClass } from '@/components/ui/Button';
@@ -65,6 +66,7 @@ export default function ProjectPage() {
   if (isLoading) {
     return (
       <div className="container max-w-4xl space-y-6 pb-24 pt-32">
+        <WakingUpNotice active />
         <Skeleton className="h-6 w-40" />
         <Skeleton className="h-14 w-3/4" />
         <Skeleton className="h-24" />

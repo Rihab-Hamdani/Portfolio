@@ -48,7 +48,7 @@ export function toApiError(error: unknown): ApiError {
 
 export const http = axios.create({
   baseURL: site.apiUrl,
-  timeout: 15000,
+  timeout: 90000,
   headers: { 'Content-Type': 'application/json' },
 });
 

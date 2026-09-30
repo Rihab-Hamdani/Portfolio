@@ -3,9 +3,11 @@ import { Link } from 'react-router-dom';
 import { ProjectCard, ProjectStatusBadge } from '@/components/ProjectCard';
 import { Accent, SectionHeading } from '@/components/SectionHeading';
 import { Reveal } from '@/components/Reveal';
+import { WakingUpNotice } from '@/components/WakingUpNotice';
 import { Skeleton } from '@/components/ui/Skeleton';
 import { EmptyState, ErrorState } from '@/components/ui/States';
 import { useProjects } from '@/hooks/usePublicContent';
+
 
 export function Projects() {
   const { data, isLoading, isError, error, refetch } = useProjects();
@@ -23,6 +25,7 @@ export function Projects() {
           description="Each project covers the problem, the architecture, the key features and what I'm still working on. Status labels are honest: some are in active development or research."
         />
 
+        <WakingUpNotice active={isLoading} />
         {isLoading && (
           <div className="grid gap-5 lg:grid-cols-2">
             <Skeleton className="h-72 lg:col-span-2" />
